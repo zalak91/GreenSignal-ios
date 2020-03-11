@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="93b-HZ-qmK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="g0F-4Z-9H3">
+            <objects>
+                <viewController id="93b-HZ-qmK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAv-Pr-Flh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GreenSignal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMC-rP-D9v">
+                                <rect key="frame" x="94.5" y="433" width="225" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="TDr-EA-nOr"/>
+                                    <constraint firstAttribute="height" constant="40" id="daV-iw-9hR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="33"/>
+                                <color key="textColor" red="0.1333333333" green="0.80000000000000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ssF-ml-Tl8">
+                                <rect key="frame" x="127.5" y="285" width="159" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="B0p-q9-H7l"/>
+                                    <constraint firstAttribute="width" constant="159" id="tZQ-4T-cpT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PMC-rP-D9v" firstAttribute="centerX" secondItem="QIw-Z2-GcP" secondAttribute="centerX" id="BXO-6N-qcS"/>
+                            <constraint firstItem="PMC-rP-D9v" firstAttribute="top" secondItem="ssF-ml-Tl8" secondAttribute="bottom" constant="24" id="Nmy-Cl-OGN"/>
+                            <constraint firstItem="PMC-rP-D9v" firstAttribute="centerY" secondItem="QIw-Z2-GcP" secondAttribute="centerY" id="OkM-jX-uUk"/>
+                            <constraint firstItem="ssF-ml-Tl8" firstAttribute="centerX" secondItem="QIw-Z2-GcP" secondAttribute="centerX" id="QIh-Vx-MXi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QIw-Z2-GcP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37V-Im-EOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splashimg.png" width="192" height="216"/>
+    </resources>
+</document>
